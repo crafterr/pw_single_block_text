@@ -1,0 +1,44 @@
+<?php
+
+/**
+ * @file
+ * Contains pw_single_block_text.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function pw_single_block_text_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the pw_single_block_text module.
+    case 'help.page.pw_single_block_text':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Provide a simple title, subtitle and long textarea element') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function pw_single_block_text_theme() {
+  return [
+    'field__paragraph__field_pw_title__pw_single_block_text' => [
+      'base hook' => 'field',
+    ],
+    'field__paragraph__field_pw_subtitle__pw_single_block_text' => [
+      'base hook' => 'field',
+    ],
+    'field__paragraph__field_pw_long_text__pw_single_block_text' => [
+      'base hook' => 'field',
+    ],
+    'paragraph__pw_single_block_text' => [
+      'base hook' => 'paragraph',
+    ],
+  ];
+}

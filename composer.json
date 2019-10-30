@@ -1,0 +1,17 @@
+{
+    "name": "crafterr/pw_single_block_text",
+    "type": "drupal-module",
+    "description": "Provide a simple title, subtitle and long textarea element",
+    "keywords": ["Drupal"],
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.1"
+    },
+    "authors": [
+        {
+            "name": "Adam Pietras",
+            "email": "adam@crafter.net.pl"
+        }
+    ]
+}

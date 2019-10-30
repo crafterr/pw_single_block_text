@@ -1,0 +1,38 @@
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.pw_single_block_text.field_pw_long_text
+    - field.field.paragraph.pw_single_block_text.field_pw_subtitle
+    - field.field.paragraph.pw_single_block_text.field_pw_title
+    - paragraphs.paragraphs_type.pw_single_block_text
+  module:
+    - text
+id: paragraph.pw_single_block_text.default
+targetEntityType: paragraph
+bundle: pw_single_block_text
+mode: default
+content:
+  field_pw_long_text:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_pw_subtitle:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_pw_title:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

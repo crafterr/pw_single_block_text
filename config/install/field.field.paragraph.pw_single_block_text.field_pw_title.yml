@@ -1,0 +1,17 @@
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pw_title
+    - paragraphs.paragraphs_type.pw_single_block_text
+id: paragraph.pw_single_block_text.field_pw_title
+field_name: field_pw_title
+entity_type: paragraph
+bundle: pw_single_block_text
+label: 'Main title'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,22 @@
+<?php
+
+const PW_SINGLE_BLOCK_TEXT_PARAGRAPH_NAME = 'pw_single_block_text';
+
+
+/**
+ * @throws \Drupal\Component\Plugin\Exception\InvalidPluginDefinitionException
+ * @throws \Drupal\Component\Plugin\Exception\PluginNotFoundException
+ * @throws \Drupal\Core\Entity\EntityStorageException
+ */
+function pw_single_block_text_uninstall(){
+
+  $paragraph_types = array(PW_SINGLE_BLOCK_TEXT_PARAGRAPH_NAME);
+  foreach ($paragraph_types as $paragraph_type) {
+    $para_type = \Drupal::entityTypeManager()->getStorage('paragraphs_type')->load($paragraph_type);
+    if ($para_type) {
+      $para_type->delete();
+    }
+  }
+}
+
+

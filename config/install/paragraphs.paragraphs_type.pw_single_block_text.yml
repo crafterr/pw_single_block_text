@@ -1,0 +1,7 @@
+status: true
+dependencies: {  }
+id: pw_single_block_text
+label: 'Single Block Text'
+icon_uuid: null
+description: 'Provide a simple title, subtitle and long textarea element'
+behavior_plugins: {  }
