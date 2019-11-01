@@ -3,3 +3,5 @@ type: module
 description: 'Provide a simple title, subtitle and long textarea element'
 core: 8.x
 package: 'PixelWeb'
+dependencies:
+  - pw
